@@ -18,7 +18,7 @@ export default function MattermostLogo(props) {
                     viewBox='0 0 500 500'
                     style={style.background}
                     role='icon'
-                    aria-label={localizeMessage('generic_icons.mattermost', 'Mattermost Logo')}
+                    aria-label={formatMessage({id: t('generic_icons.mattermost')}, 'Mattermost Logo')}
                 >
                     <g id='XMLID_1_'>
                         <g id='XMLID_3_'>
