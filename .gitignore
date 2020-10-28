@@ -1,7 +1,8 @@
 dist
 .npminstall
 .yarninstall
-node_modules
+node_modules/*
+!node_modules/mattermost-redux/utils/
 *.swp
 .idea
 *.tar.gz

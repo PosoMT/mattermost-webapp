@@ -26,7 +26,7 @@ export default class UserGridName extends React.Component<Props> {
 
                 <div className='UserGrid_name'>
                     <span>
-                        {`${user.username} - ${user.first_name} ${user.last_name}`}
+                        {`${user.username} - ${user.last_name} ${user.first_name}`}
                     </span>
                     <span className='ug-email'>
                         {user.email}

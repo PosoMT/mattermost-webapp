@@ -27,7 +27,7 @@ const AdminUserCard = (props) => (
                 userId={props.user.id}
             />
             <div className='AdminUserCard__user-info'>
-                <span>{props.user.first_name} {props.user.last_name}</span>
+                <span>{props.user.last_name} {props.user.first_name}</span>
                 <Bullet user={props.user}/>
                 <span className='AdminUserCard__user-nickname'>{props.user.nickname}</span>
             </div>

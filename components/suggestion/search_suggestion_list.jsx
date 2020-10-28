@@ -29,11 +29,11 @@ export default class SearchSuggestionList extends SuggestionList {
         if (item.username) {
             this.currentLabel = item.username;
             if ((item.first_name || item.last_name) && item.nickname) {
-                this.currentLabel += ` ${item.first_name} ${item.last_name} ${item.nickname}`;
+                this.currentLabel += ` ${item.last_name} ${item.first_name} ${item.nickname}`;
             } else if (item.nickname) {
                 this.currentLabel += ` ${item.nickname}`;
             } else if (item.first_name || item.last_name) {
-                this.currentLabel += ` ${item.first_name} ${item.last_name}`;
+                this.currentLabel += ` ${item.last_name} ${item.first_name}`;
             }
         } else if (item.type === Constants.DM_CHANNEL || item.type === Constants.GM_CHANNEL) {
             this.currentLabel = item.display_name;

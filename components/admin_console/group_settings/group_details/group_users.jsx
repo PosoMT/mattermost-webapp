@@ -77,7 +77,7 @@ export default class GroupUsers extends React.PureComponent {
                 <GroupUsersRow
                     key={member.id}
                     username={member.username}
-                    displayName={member.first_name + ' ' + member.last_name}
+                    displayName={member.last_name + ' ' + member.first_name}
                     email={member.email}
                     userId={member.id}
                     lastPictureUpdate={member.last_picture_update}
